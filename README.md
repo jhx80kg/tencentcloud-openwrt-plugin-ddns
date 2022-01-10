@@ -21,4 +21,4 @@ entry({"admin", "network", "tencentddns"},cbi("tencentddns"),_("TencentDDNS"),2)
 end
 
 
-##显示位置为 网络-腾讯云ddns
+## 显示位置为 网络-腾讯云ddns
