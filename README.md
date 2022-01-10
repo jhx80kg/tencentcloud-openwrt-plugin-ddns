@@ -13,8 +13,14 @@
 | GitHub项目 | [tencentcloud-openwrt-plugin-ddns](https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns)                            |
 | 主创团队   | 腾讯云中小企业产品中心（SMB Product Center of Tencent Cloud） |
 
+## 注.本人已经修改
 
+module("luci.controller.tencentddns",package.seeall)
+function index()
+entry({"admin", "network", "tencentddns"},cbi("tencentddns"),_("TencentDDNS"),2)
+end
 
+菜单栏显示位置为 网络-腾讯云ddns
 ## 2.功能特性
 
 - 可在安装了openwrt的软路由上，将运营商分配的家庭宽带公网IP动态关联到指定的DNSPod域名解析记录上。实现通过域名访问家庭内网服务的目的。
