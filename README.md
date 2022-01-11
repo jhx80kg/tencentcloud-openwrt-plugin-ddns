@@ -16,7 +16,11 @@
 ## 注.本人已经修改
 代码如下：
 module("luci.controller.tencentddns",package.seeall)
+
+
 function index()
+
+
 entry({"admin", "network", "tencentddns"},cbi("tencentddns"),_("TencentDDNS"),2)
 
 
